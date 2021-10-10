@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build --modern",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.22.0",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "oh-vue-icons": "^0.4.7",
+    "vue": "^2.6.11",
+    "vue-skycons": "^4.1.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -32,7 +35,10 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-unused-vars": "off",
+      "vue/no-unused-components": "off"
+    }
   },
   "browserslist": [
     "> 1%",
